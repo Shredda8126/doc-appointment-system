@@ -17,7 +17,7 @@ export default function Home() {
             <div className="space-y-8">
               <Badge
                 variant="outline"
-                className="bg-emerald-900/30 border-emerald-700/30 px-4 py-2 text-emerald-400 text-sm font-medium"
+                className="bg-violet-900/30 border-violet-700/30 px-4 py-2 text-violet-400 text-sm font-medium"
               >
                 Healthcare made simple
               </Badge>
@@ -33,7 +33,7 @@ export default function Home() {
                 <Button
                   asChild
                   size="lg"
-                  className="bg-emerald-600 text-white hover:bg-emerald-700"
+                  className="bg-violet-600 text-white hover:bg-violet-700"
                 >
                   <Link href="/onboarding">
                     Get Started <ArrowRight className="ml-2 h-4 w-4" />
@@ -43,7 +43,7 @@ export default function Home() {
                   asChild
                   variant="outline"
                   size="lg"
-                  className="border-emerald-700/30 hover:bg-muted/80"
+                  className="border-violet-700/30 hover:bg-muted/80"
                 >
                   <Link href="/doctors">Find Doctors</Link>
                 </Button>
@@ -79,10 +79,10 @@ export default function Home() {
             {features.map((feature, index) => (
               <Card
                 key={index}
-                className="bg-card border-emerald-900/20 hover:border-emerald-800/40 transition-all duration-300"
+                className="bg-card border-violet-900/20 hover:border-violet-800/40 transition-all duration-300"
               >
                 <CardHeader className="pb-2">
-                  <div className="bg-emerald-900/20 p-3 rounded-lg w-fit mb-4">
+                  <div className="bg-violet-900/20 p-3 rounded-lg w-fit mb-4">
                     {feature.icon}
                   </div>
                   <CardTitle className="text-xl font-semibold text-white">
@@ -104,7 +104,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <Badge
               variant="outline"
-              className="bg-emerald-900/30 border-emerald-700/30 px-4 py-1 text-emerald-400 text-sm font-medium mb-4"
+              className="bg-violet-900/30 border-violet-700/30 px-4 py-1 text-violet-400 text-sm font-medium mb-4"
             >
               Affordable Healthcare
             </Badge>
@@ -122,10 +122,10 @@ export default function Home() {
             <Pricing />
 
             {/* Description */}
-            <Card className="mt-12 bg-muted/20 border-emerald-900/30">
+            <Card className="mt-12 bg-muted/20 border-violet-900/30">
               <CardHeader>
                 <CardTitle className="text-xl font-semibold text-white flex items-center">
-                  <Stethoscope className="h-5 w-5 mr-2 text-emerald-400" />
+                  <Stethoscope className="h-5 w-5 mr-2 text-violet-400" />
                   How Our Credit System Works
                 </CardTitle>
               </CardHeader>
@@ -133,9 +133,9 @@ export default function Home() {
                 <ul className="space-y-3">
                   {creditBenefits.map((benefit, index) => (
                     <li key={index} className="flex items-start">
-                      <div className="mr-3 mt-1 bg-emerald-900/20 p-1 rounded-full">
+                      <div className="mr-3 mt-1 bg-violet-900/20 p-1 rounded-full">
                         <svg
-                          className="h-4 w-4 text-emerald-400"
+                          className="h-4 w-4 text-violet-400"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -168,7 +168,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <Badge
               variant="outline"
-              className="bg-emerald-900/30 border-emerald-700/30 px-4 py-1 text-emerald-400 text-sm font-medium mb-4"
+              className="bg-violet-900/30 border-violet-700/30 px-4 py-1 text-violet-400 text-sm font-medium mb-4"
             >
               Success Stories
             </Badge>
@@ -184,12 +184,12 @@ export default function Home() {
             {testimonials.map((testimonial, index) => (
               <Card
                 key={index}
-                className="border-emerald-900/20 hover:border-emerald-800/40 transition-all"
+                className="border-violet-900/20 hover:border-violet-800/40 transition-all"
               >
                 <CardContent className="pt-6">
                   <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 rounded-full bg-emerald-900/20 flex items-center justify-center mr-4">
-                      <span className="text-emerald-400 font-bold">
+                    <div className="w-12 h-12 rounded-full bg-violet-900/20 flex items-center justify-center mr-4">
+                      <span className="text-violet-400 font-bold">
                         {testimonial.initials}
                       </span>
                     </div>
@@ -215,7 +215,7 @@ export default function Home() {
       {/* CTA Section with green medical styling */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <Card className="bg-gradient-to-r from-emerald-900/30 to-emerald-950/20 border-emerald-800/20">
+          <Card className="bg-gradient-to-r from-violet-900/30 to-violet-950/20 border-violet-800/20">
             <CardContent className="p-8 md:p-12 lg:p-16 relative overflow-hidden">
               <div className="max-w-2xl relative z-10">
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
@@ -230,7 +230,7 @@ export default function Home() {
                   <Button
                     asChild
                     size="lg"
-                    className="bg-emerald-600 text-white hover:bg-emerald-700"
+                    className="bg-violet-600 text-white hover:bg-violet-700"
                   >
                     <Link href="/sign-up">Sign Up Now</Link>
                   </Button>
@@ -238,7 +238,7 @@ export default function Home() {
                     asChild
                     variant="outline"
                     size="lg"
-                    className="border-emerald-700/30 hover:bg-muted/80"
+                    className="border-violet-700/30 hover:bg-muted/80"
                   >
                     <Link href="#pricing">View Pricing</Link>
                   </Button>
@@ -246,8 +246,8 @@ export default function Home() {
               </div>
 
               {/* Decorative healthcare elements */}
-              <div className="absolute right-0 top-0 w-[300px] h-[300px] bg-emerald-800/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
-              <div className="absolute left-0 bottom-0 w-[200px] h-[200px] bg-emerald-700/10 rounded-full blur-3xl -ml-10 -mb-10"></div>
+              <div className="absolute right-0 top-0 w-[300px] h-[300px] bg-violet-800/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
+              <div className="absolute left-0 bottom-0 w-[200px] h-[200px] bg-violet-700/10 rounded-full blur-3xl -ml-10 -mb-10"></div>
             </CardContent>
           </Card>
         </div>
